@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(154, 194, 246, 0.524);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fff;
+    width: 22rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.title{
+    text-align: center;
+    color: rgb(45, 45, 45);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
+.description{
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+    color: rgb(175, 170, 170);
+    text-align: center;
+}
+
+.pricing{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    align-items: center;
+    background-color: rgba(163, 161, 161, 0.068);
+    border-radius: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.inner-container{
+    margin: 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.choice, .price{
+    line-height: 1.2rem;
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.price{
+    color: rgb(131, 129, 129);
+    font-weight: 500;
+}
+
+.choice{
+    color: rgb(43, 43, 43);
+}
+
+a.change{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.payment-button{
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2727f0;
+    box-shadow: rgba(41, 41, 254, 0.25) 0px 13px 27px -5px, rgba(88, 108, 255, 0.3) 0px 8px 16px -8px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.cancel{
+    color: rgb(123, 123, 123);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.top-image{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
